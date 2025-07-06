@@ -12,9 +12,14 @@ export default function Home(): JSX.Element {
         <header className="w-full py-4 px-6 bg-slate-900 shadow-md">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             {/* Texto à esquerda */}
-            <span className="text-xl font-bold text-white">
-              MapaZZZ API
-            </span>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-white">
+                MapaZZZ API
+              </span>
+              <p className="text-sm text-gray-300 mt-2 max-w-md">
+                API pública do MapaZZZ que mapeia zonas de risco de malária por meio de reportes de usuários, IA e autoridades sanitárias
+              </p>
+            </div>
             {/* Logo à direita */}
             <div className="w-10 h-10 bg-blue-700 rounded-md flex items-center justify-center">
               <img src="/img/logo.png" alt="Logo MapaZZZ" className="w-8 h-8 object-contain" />
