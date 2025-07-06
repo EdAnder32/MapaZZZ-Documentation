@@ -1,14 +1,17 @@
+// @ts-check
+// docusaurus.config.js
+
 module.exports = {
   title: 'MapaZZZ API',
   tagline: 'Dados em tempo real sobre zonas de risco de malária',
-  url: 'https://mapazzz.vercel.app',
+  url: 'https://mapazzz.vercel.app', // OU seu domínio real
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   organizationName: 'mapazzz', // GitHub org/user
-  projectName: 'api-doc',       // Nome do repositório
+  projectName: 'api-doc',       // GitHub repo ou nome do projeto
 
   stylesheets: [
     'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'
@@ -32,7 +35,7 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} MapaZZZ`,
+      copyright: `© ${new Date().getFullYear()} MapaZZZ`,
     },
   },
 
@@ -41,7 +44,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'), // Troque para .js se estiver usando JS
+          sidebarPath: require.resolve('./sidebars.js'),
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
