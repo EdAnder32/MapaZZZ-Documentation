@@ -12,17 +12,16 @@ export default function Home(): JSX.Element {
         <header className="w-full py-4 px-6 bg-slate-900 shadow-md">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             {/* Texto à esquerda */}
-            <div className="flex flex-col">
-              <span className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent tracking-wide">
+            <div className="flex flex-col items-center">
+              <span className="text-3xl font-bold text-white tracking-wide">
                 MapaZZZ API
               </span>
-              <p className="text-lg text-blue-100 mt-4 max-w-lg font-medium leading-relaxed">
+              <p className="text-lg text-blue-100 mt-4 max-w-lg font-medium leading-relaxed text-center">
                 API pública do MapaZZZ que mapeia zonas de risco de malária por meio de reportes de usuários, IA e autoridades sanitárias
               </p>
               <a href="/docs/introducao" className="mt-6 inline-block">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300 flex items-center space-x-2">
-                  <span>📚</span>
-                  <span>Acessar Documentação</span>
+                <button className="bg-blue-600 hover:bg-blue-700 text-white font-mono py-3 px-6 rounded-full shadow-lg transition-all duration-300 border-2 border-blue-400 hover:border-blue-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]">
+                  Acessar Documentação
                 </button>
               </a>
             </div>
