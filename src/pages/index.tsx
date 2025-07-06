@@ -22,31 +22,24 @@ export default function Home(): JSX.Element {
           </div>
         </header>
 
-        {/* CONTEÚDO CENTRAL */}
-        <section className="flex-1 flex items-center justify-center px-6 py-16">
-          <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+        {/* SEÇÃO DE TEXTO À DIREITA DA LOGO */}
+        <section className="flex-1 flex justify-end items-start px-6 py-16">
+          <div className="max-w-xl bg-slate-900 border border-blue-700 rounded-xl p-8 shadow-lg space-y-6">
 
-            {/* Imagem à esquerda */}
-            <div className="flex justify-center">
-              <div className="w-40 h-40 bg-blue-700 rounded-xl flex items-center justify-center shadow-lg p-4">
-                <img src="/img/logo.png" alt="Logo MapaZZZ" className="w-full h-full object-contain" />
-              </div>
-            </div>
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent">
+              MapaZZZ API
+            </h1>
 
-            {/* Texto à direita */}
-            <div className="text-left space-y-6">
-              <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent">
-                MapaZZZ API
-              </h1>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Dados de malária em tempo real, processados com IA e validados por instituições de saúde.
-              </p>
-              <a href="/docs/introducao">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition-all duration-300">
-                  📚 Acessar Documentação
-                </button>
-              </a>
-            </div>
+            <p className="text-lg text-gray-300">
+              Dados de malária em tempo real, processados com IA e validados por instituições de saúde reconhecidas.
+            </p>
+
+            <a href="/docs/introducao">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl shadow transition-all duration-300">
+                📚 Acessar Documentação
+              </button>
+            </a>
+
           </div>
         </section>
 
