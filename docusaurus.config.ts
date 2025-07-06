@@ -1,21 +1,4 @@
 import { Config } from '@docusaurus/types';
-module.exports = {
-  // ...
-  stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'
-  ],
-  themes: [],
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
-};
 
 const config: Config = {
   title: 'MapaZZZ API',
@@ -27,7 +10,11 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   organizationName: 'mapazzz', // GitHub org/user
-  projectName: 'api-doc',       // Repo name
+  projectName: 'api-doc',       // Nome do repositório
+
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'
+  ],
 
   themeConfig: {
     navbar: {
@@ -50,9 +37,10 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} MapaZZZ`,
     },
   },
+
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
