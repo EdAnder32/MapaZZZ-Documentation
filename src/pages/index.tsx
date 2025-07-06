@@ -13,10 +13,10 @@ export default function Home(): JSX.Element {
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             {/* Texto à esquerda */}
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-white">
+              <span className="text-2xl font-bold text-white tracking-wide">
                 MapaZZZ API
               </span>
-              <p className="text-sm text-gray-300 mt-2 max-w-md">
+              <p className="text-base text-blue-200 mt-3 max-w-lg font-medium leading-relaxed">
                 API pública do MapaZZZ que mapeia zonas de risco de malária por meio de reportes de usuários, IA e autoridades sanitárias
               </p>
             </div>
