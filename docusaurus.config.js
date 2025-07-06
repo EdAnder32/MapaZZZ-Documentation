@@ -1,6 +1,4 @@
-import { Config } from '@docusaurus/types';
-
-const config: Config = {
+module.exports = {
   title: 'MapaZZZ API',
   tagline: 'Dados em tempo real sobre zonas de risco de malária',
   url: 'https://mapazzz.vercel.app',
@@ -43,7 +41,7 @@ const config: Config = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.ts'),
+          sidebarPath: require.resolve('./sidebars.js'), // Troque para .js se estiver usando JS
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -52,5 +50,3 @@ const config: Config = {
     ],
   ],
 };
-
-export default config;
