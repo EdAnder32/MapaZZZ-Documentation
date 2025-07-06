@@ -49,4 +49,10 @@
   "engines": {
     "node": ">=18.0"
   }
+  "scripts": {
+  "start": "docusaurus start",
+  "build": "docusaurus build",
+  "serve": "docusaurus serve"
+}
+
 }
