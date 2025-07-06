@@ -26,7 +26,7 @@ export default function Home(): JSX.Element {
               </h1>
 
               <p className="text-lg text-blue-100 mt-4 max-w-lg font-medium leading-relaxed text-center">
-                API pública do MapaZZZ que mapeia zonas de risco de malária por meio de reportes de usuários, IA e autoridades sanitárias.
+                Documentação oficial da API que alimenta o MapaZZZ — uma plataforma inteligente para monitoramento em tempo real de zonas com alto risco de malária, baseada em dados geolocalizados, inteligência artificial e validação de autoridades sanitárias.
               </p>
 
               <a href="/docs/introducao" className="mt-6 inline-block">
