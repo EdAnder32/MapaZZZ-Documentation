@@ -1,4 +1,21 @@
 import { Config } from '@docusaurus/types';
+module.exports = {
+  // ...
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'
+  ],
+  themes: [],
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+  ],
+};
 
 const config: Config = {
   title: 'MapaZZZ API',
