@@ -7,37 +7,45 @@ export default function Home(): JSX.Element {
       title="MapaZZZ API"
       description="Documentação oficial da API pública do MapaZZZ"
     >
-      <main className="bg-[#0a0a23] text-white min-h-screen flex flex-col justify-between">
-        {/* Topo com texto à esquerda e logo à direita */}
-        <header className="w-full py-4 px-6 bg-slate-900 shadow-md">
-          <div className="max-w-7xl mx-auto flex items-center justify-between">
-            {/* Texto à esquerda */}
-            <div className="flex flex-col items-center">
-              <span className="text-5xl font-black text-white tracking-wide mb-2">
+      <main className="min-h-screen bg-gradient-to-br from-[#0a0a23] via-[#111132] to-[#0a0a23] text-white flex flex-col justify-between font-sans">
+
+        {/* Cabeçalho */}
+        <header className="py-10 px-6">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+
+            {/* Texto principal */}
+            <div className="text-center md:text-left">
+              <h1 className="text-5xl font-extrabold tracking-tight mb-4 text-white drop-shadow-lg">
                 MapaZZZ API
-              </span>
-              <p className="text-lg text-blue-100 mt-4 max-w-lg font-medium leading-relaxed text-center">
-                API pública do MapaZZZ que mapeia zonas de risco de malária por meio de reportes de usuários, IA e autoridades sanitárias
+              </h1>
+              <p className="text-lg text-blue-100 font-light leading-relaxed max-w-xl mx-auto md:mx-0">
+                API pública do MapaZZZ que mapeia zonas de risco de malária por meio de reportes de usuários, IA e autoridades sanitárias.
               </p>
-              <a href="/docs/introducao" className="mt-6 inline-block">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white font-mono py-4 px-8 text-lg rounded-full shadow-lg transition-all duration-300 border-2 border-blue-400 hover:border-blue-300 shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:shadow-[0_0_25px_rgba(59,130,246,0.8)] animate-pulse">
-                  Acessar Documentação
-                </button>
-              </a>
+
+              <div className="mt-8">
+                <a href="/docs/introducao">
+                  <button className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-medium text-lg shadow-xl hover:scale-105 transform transition-all duration-300 border border-blue-400 hover:border-indigo-400">
+                    📘 Acessar Documentação
+                  </button>
+                </a>
+              </div>
             </div>
-            {/* Logo à direita */}
-            <div className="w-10 h-10 bg-blue-700 rounded-md flex items-center justify-center">
-              <img src="/img/logo.png" alt="Logo MapaZZZ" className="w-8 h-8 object-contain" />
+
+            {/* Logo com destaque */}
+            <div className="flex justify-center md:justify-end">
+              <div className="w-36 h-36 bg-white rounded-full flex items-center justify-center shadow-2xl animate-[pulse_4s_ease-in-out_infinite]">
+                <img src="/img/logo.png" alt="Logo MapaZZZ" className="w-20 h-20 object-contain" />
+              </div>
             </div>
+
           </div>
         </header>
 
-        {/* Conteúdo vazio */}
-
         {/* Rodapé */}
-        <footer className="w-full text-center text-gray-400 py-6 border-t border-slate-700 mt-16">
-          © 2025 MapaZZZ API. Todos os direitos reservados.
+        <footer className="text-center text-sm text-gray-400 py-6 border-t border-slate-800">
+          © 2025 <span className="text-blue-300 font-semibold">MapaZZZ API</span>. Todos os direitos reservados.
         </footer>
+
       </main>
     </Layout>
   );
