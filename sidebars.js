@@ -13,7 +13,7 @@ const sidebars = {
       label: 'Endpoints da API',
       items: [
         'endpoints/statistics',
-        'endpoints/questionarios'
+        'endpoints-questionarios'
       ],
     },
   ],
