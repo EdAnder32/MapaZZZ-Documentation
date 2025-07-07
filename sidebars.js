@@ -11,8 +11,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Endpoints da API',
-      items: ['endpoints/statistics']
-      ],
+      items: ['endpoints/statistics'],
     },
   ],
 };
