@@ -72,13 +72,13 @@ Retorna o número total de focos por região.
 Retorna a evolução temporal de focos em uma região.
 ### Query Parameters
 
-    region (obrigatório): nome da região
+    ` region ` (obrigatório): nome da região
 
-    level (obrigatório): "country", "province", "municipality", "neighbourhood"
+    ` level ` (obrigatório): "country", "province", "municipality", "neighbourhood"
 
-    days (opcional): número de dias (padrão: 30)
+    ` days ` (opcional): número de dias (padrão: 30)
 
-    granularity (opcional): "day", "week", "month", "year" (padrão: "day")
+    ` granularity ` (opcional): "day", "week", "month", "year" (padrão: "day")
 
 ### Exemplo de resposta:
 ``` json
@@ -99,13 +99,13 @@ Retorna a evolução temporal de focos em uma região.
 Retorna alertas de crescimento anormal de focos.
 ### Query Parameters
 
-    region (obrigatório): nome da região
+    ` region `  (obrigatório): nome da região
 
-    level (obrigatório): "country", "province", "municipality", "neighbourhood"
+    ` level ` (obrigatório): "country", "province", "municipality", "neighbourhood"
 
-    granularity (opcional): "week", "month" (padrão: "week")
+    ` granularity ` (opcional): "week", "month" (padrão: "week")
 
-    days (opcional): número de dias (padrão: 30)
+    ` days ` (opcional): número de dias (padrão: 30)
 
 ### Exemplo de resposta:
 ``` json
