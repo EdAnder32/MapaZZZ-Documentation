@@ -1,6 +1,3 @@
-/**
- * @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
- */
 const sidebars = {
   tutorialSidebar: [
     {
@@ -13,7 +10,9 @@ const sidebars = {
       label: 'Endpoints da API',
       items: [
         'endpoints/statistics',
-        'endpoints-questionarios'
+        'endpoints/reportes',
+        'endpoints/zonas-de-risco',
+        'endpoints/endpoints-questionarios',
       ],
     },
   ],
