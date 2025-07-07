@@ -11,9 +11,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Endpoints da API',
-      items: [
-        'api/statistics', // Esse é o caminho do arquivo que colocaremos
-        // Adicione mais aqui depois: ex: 'api/reports'
+      items: ['endpoints/statistics']
       ],
     },
   ],
