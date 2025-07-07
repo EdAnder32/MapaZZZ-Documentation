@@ -1,6 +1,6 @@
 ---
 id: endpoints-questionarios
-title: Listar Questionários
+title: Questionários
 ---
 
 ### GET `/questionnaires`
