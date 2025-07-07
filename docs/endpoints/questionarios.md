@@ -1,5 +1,5 @@
 ---
-id: endpoints/questionarios
+id: endpoints-questionarios
 title: Listar Questionários
 ---
 
