@@ -6,12 +6,15 @@ const sidebars = {
     {
       type: 'category',
       label: 'Introdução',
-      items: ['introducao'], // Supondo que exista um docs/introducao.md
+      items: ['introducao'],
     },
     {
       type: 'category',
       label: 'Endpoints da API',
-      items: ['endpoints/statistics'],
+      items: [
+        'endpoints/statistics',
+        'endpoints/questionarios'
+      ],
     },
   ],
 };
